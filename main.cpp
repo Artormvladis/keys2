@@ -14,11 +14,9 @@ int main()
         }
         cin>>a;
     }
-    pb(mass, mass2);
-    pa(mass, mass2);
+
     for(int d1=0; d1<mass.size(); d1++){
         cout<<mass[d1]<<endl;
     }
     return 0;
 }
-
