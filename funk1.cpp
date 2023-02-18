@@ -10,28 +10,22 @@ void sa(vector <int> &mass){
     }}
 void pb(vector <int> &mass, vector <int> &mass2){
     if(mass.size()>0){
-        int a;
+        int a = mass[0];
 
-        a = mass[0];
         itc_lshift_list(mass);
         mass.pop_back();
-        itc_rshift_list(mass);
 
-        itc_lshift_list(mass2);
         mass2.push_back(a);
         itc_rshift_list(mass2);
     }
 }
 void pa(vector <int> &mass, vector <int> &mass2){
     if(mass2.size()>0){
-        int a;
+        int a = mass2[0];
 
-        a = mass2[0];
         itc_lshift_list(mass2);
         mass.pop_back();
-        itc_rshift_list(mass2);
 
-        itc_lshift_list(mass);
         mass2.push_back(a);
         itc_rshift_list(mass);
     }
