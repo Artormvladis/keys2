@@ -16,6 +16,14 @@ int main()
         cin>>a;
     }
     int min;
-    min=
+    min=list_min(mass);
+    while(mass2.size<mass.size){
+    while(mass[0]!=min){
+        rra(mass);
+        cout<<rra;
+    }
+        pa(mass, mass2);
+        cout<<pa;
+    }
     return 0;
 }
