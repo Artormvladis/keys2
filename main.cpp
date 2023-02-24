@@ -25,7 +25,7 @@ int main()
         pb(mass, mass2);
         cout<<pb;
     }
-    for(i1=0; i1<mass.size(); i1++){
+    for(int i1=0; i1<mass.size(); i1++){
         pa(mass, mass2);
         cout<<pa;
     }
