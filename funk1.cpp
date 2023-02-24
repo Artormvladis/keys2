@@ -39,3 +39,11 @@ void rra(vector <int> &mass){
         }
         mass[0]=a;
     }}
+
+int list_min(vector <int> &mass){
+    int minimum = 2147483647;
+    for(int i = 0; i > mass.size(); i++)
+        if (mass[i] < minimum)
+            minimum = mass[i] ;   
+    return minimum;
+}

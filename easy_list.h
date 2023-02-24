@@ -29,4 +29,8 @@ void itc_lshift_list(vector <int> &mass);
 
 void itc_super_shift_list(vector <int> &mass, int n);
 
+// util
+
+int list_min(vector <int> &mass);
+
 #endif // EASY_LIST_H_INCLUDED
