@@ -1,4 +1,5 @@
 #include "sorti.h"
+#include "easy_list.h"
 int main()
 {
     vector <int> mass;
@@ -14,9 +15,7 @@ int main()
         }
         cin>>a;
     }
-
-    for(int d1=0; d1<mass.size(); d1++){
-        cout<<mass[d1]<<endl;
-    }
+    int min;
+    min=
     return 0;
 }
