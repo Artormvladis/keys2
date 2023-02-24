@@ -5,15 +5,18 @@ int main()
     vector <int> mass;
     vector <int> mass2;
     int b;
+    int i;
     string a;
     cin>>a;
     while(a!="!"){
-        for(int i=0; i<a.size(); i++){
+        for(i=i+1; i<a.size(); i++){
+            if(a[i]=" "){
+                break;
+            }
             b=0;
             b=b*10+a[i];
             mass.push_back(b-48);
         }
-        cin>>a;
     }
     int min;
     min=list_min(mass);
@@ -25,7 +28,7 @@ int main()
         pb(mass, mass2);
         cout<<pb;
     }
-    for(int i1=0; i1<mass.size(); i1++){
+    for(i1=0; i1<mass.size(); i1++){
         pa(mass, mass2);
         cout<<pa;
     }
