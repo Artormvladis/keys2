@@ -18,10 +18,10 @@ int main()
             mass.push_back(b-48);
         }
     }
-    int min;
-    min=list_min(mass);
+    int minn;
+    minn=list_min(mass);
     while(mass2.size()<mass.size()){
-    while(mass[0]!=min){
+    while(mass[0]!=minn){
         rra(mass);
         cout<<rra;
     }
