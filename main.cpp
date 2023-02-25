@@ -6,17 +6,21 @@ int main(){
     vector <int> mass;
     vector <int> mass2;
     int b;
+    int i;
     string a;
     cin >> a;
 
     while(a!="!"){
-        for(int i=0; i<a.size(); i++){
+        for(i=i+1; i<a.size(); i++){
+            if(a[i]=" "){
+                break;
+            }
             b=0;
             b=b*10+a[i];
             mass.push_back(b-48);
         }
-        cin>>a;
     }
+<<<<<<< HEAD
 
     int minimum=list_min(mass);
     while(mass2.size() < mass.size()){
@@ -31,5 +35,21 @@ int main(){
             pa(mass, mass2);
             cout<<"pa";
         }
+=======
+    int minn;
+    minn=list_min(mass);
+    while(mass2.size()<mass.size()){
+    while(mass[0]!=minn){
+        rra(mass);
+        cout<<rra;
+    }
+        pb(mass, mass2);
+        cout<<pb;
+    }
+    for(i1=0; i1<mass.size(); i1++){
+        pa(mass, mass2);
+        cout<<pa;
+    }
+>>>>>>> a372f3d871f7c1656743def3043abe9bff61d503
     return 0;
 }
