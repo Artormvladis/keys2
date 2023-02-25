@@ -11,11 +11,11 @@ int main()
     while(a!="!"){
         for(i=i+1; i<a.size(); i++){
             if(a[i]=' '){
+                mass.push_back(b);
                 break;
             }
             b=0;
             b=b*10+a[i];
-            mass.push_back(b-48);
         }
     }
     int minn;
