@@ -31,14 +31,13 @@ void pa(vector <int> &mass, vector <int> &mass2){
     }
 }
 void rra(vector <int> &mass){
-    if(mass.size()>0){
-        int a;
-        a=mass[mass.size()-1];
-        for(int i=mass.size()-1; i>0; i--){
-            mass[i]=mass[i-1];
-        }
-        mass[0]=a;
-    }}
+    if (mass.size() > 0){
+    int container = mass[mass.size() - 1];
+        for(int x = mass.size() - 2; x > -1; x--)
+            mass[x+1] = mass[x];
+        mass[0] = container;
+}
+}
 
 int list_min(vector <int> &mass){
     int minimum = 2147483647;
