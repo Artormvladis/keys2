@@ -40,10 +40,10 @@ void rra(vector <int> &mass){
         mass[0]=a;
     }}
 
-int list_min(vector <int> &mass){
-    int minimum = 2147483647;
-    for(int i = 0; i > mass.size(); i++)
-        if (mass[i] < minimum)
-            minimum = mass[i] ;   
-    return minimum;
+int list_max(vector <int> &mass){
+    int maximum = 0;
+    for(int i = 0; i < mass.size(); i++)
+        if (mass[i] > maximum)
+            maximum = mass[i] ;
+    return maximum;
 }

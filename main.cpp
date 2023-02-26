@@ -4,33 +4,39 @@ int main()
 {
     vector <int> mass;
     vector <int> mass2;
-    int b;
-    int i;
+    int b = 0;
     string a;
-    cin>>a;
-    while(a!="!"){
-        for(i=i+1; i<a.size(); i++){
-            if(a[i]=' '){
-                mass.push_back(b);
-                break;
-            }
-            b=0;
-            b=b*10+a[i];
+    getline(cin, a);
+
+    // Transform str to vector of <int>
+
+    for (int x = 0; a[x] != '\0'; x++){
+        if(a[x] == ' '){
+            mass2.push_back(b);
+            b = 0;
         }
+        else
+            b = b * 10 + (a[x] - 48);
     }
-    int minn;
-    minn=list_min(mass);
-    while(mass2.size()<mass.size()){
-    while(mass[0]!=minn){
-        rra(mass);
-        cout<<rra;
+    mass2.push_back(b);
+
+    // Transfer to mass2
+    itc_rev_list(mass2);
+    for (int i = 0; i < mass2.size(); i++)
+        cout << "pb\n";
+
+    // Roulette sort from mass2 to mass
+
+    while(mass2.size() > 0){
+        if (mass2.size() && (mass2[0] == list_max(mass2))){
+            cout << "pa\n";
+            itc_lshift_list(mass2);
+            mass2.pop_back();
     }
-        pb(mass, mass2);
-        cout<<pb;
-    }
-    for(int i1=0; i1<mass.size(); i1++){
-        pa(mass, mass2);
-        cout<<pa;
+        else{
+            cout << "rb\n";
+            rra(mass2);
+        }
     }
     return 0;
 }
