@@ -7,7 +7,7 @@ int main(){
     int b = 0;
     string a;
     getline(cin, a);
-    for (int x = 0; a[x] != '\0'; x++){
+    for (int x = 0; a[x] != '!'; x++){
         if(a[x] == ' '){
             mass.push_back(b);
             b = 0;
@@ -17,7 +17,7 @@ int main(){
     }
     mass.push_back(b);
     cin>>fun;
-    while(fun!='!'){
+    while(fun!='*'){
         if(fun=="sa"){
            sa(mass, mass2);
         }
