@@ -17,7 +17,7 @@ int main(){
     }
     mass.push_back(b);
     cin>>fun;
-    while(fun!='*'){
+    while(fun!="*"){
         if(fun=="sa"){
            sa(mass, mass2);
         }
@@ -53,6 +53,6 @@ int main(){
         }
         cin>>fun;
     }
-    cout<<check(vector <int> &mass);
+    cout<<check(mass);
 return 0;
 }

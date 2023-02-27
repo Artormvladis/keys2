@@ -34,8 +34,8 @@ int main()
             mass2.pop_back();
     }
         else{
-            cout << "rb\n";
-            rra(mass2);
+            cout << "rrb\n";
+            rrb(mass, mass2);
         }
     }
     return 0;

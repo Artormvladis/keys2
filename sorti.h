@@ -15,5 +15,5 @@ void rrr(vector <int> &mass, vector <int> &mass2);
 void ra(vector <int> &mass, vector <int> &mass2);
 void rb(vector <int> &mass, vector <int> &mass2);
 void rr(vector <int> &mass, vector <int> &mass2);
-str check(vector <int> &mass);
+string check(vector <int> &mass);
 #endif // SORTI_H_INCLUDED

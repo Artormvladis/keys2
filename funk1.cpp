@@ -16,8 +16,8 @@ void sb(vector <int> &mass, vector <int> &mass2){
         mass2[1]=a;
     }}
 void ss(vector <int> &mass, vector <int> &mass2){
-    sa(mass);
-    sb(mass2);
+    sa(mass, mass2);
+    sb(mass, mass2);
 }
 void pb(vector <int> &mass, vector <int> &mass2){
     if(mass.size()>0){
