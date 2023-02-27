@@ -7,7 +7,7 @@ int main(){
     int b = 0;
     string a;
     getline(cin, a);
-    for (int x = 0; a[x] != '!'; x++){
+    for (int x = 0; a[x] != '\0'; x++){
         if(a[x] == ' '){
             mass.push_back(b);
             b = 0;
