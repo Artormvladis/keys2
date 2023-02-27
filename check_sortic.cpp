@@ -53,6 +53,6 @@ int main(){
         }
         cin>>fun;
     }
-
+    cout<<str check(vector <int> &mass);
 return 0;
 }
