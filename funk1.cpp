@@ -1,13 +1,24 @@
 #include "sorti.h"
 #include "easy_list.h"
 
-void sa(vector <int> &mass){
+void sa(vector <int> &mass, vector <int> &mass2){
     if(mass.size()>0){
         int a;
         a=mass[0];
         mass[0]=mass[1];
         mass[1]=a;
     }}
+void sb(vector <int> &mass, vector <int> &mass2){
+    if(mass2.size()>0){
+        int a;
+        a=mass2[0];
+        mass2[0]=mass2[1];
+        mass2[1]=a;
+    }}
+void ss(vector <int> &mass, vector <int> &mass2){
+    sa(mass);
+    sb(mass2);
+}
 void pb(vector <int> &mass, vector <int> &mass2){
     if(mass.size()>0){
         int a = mass[0];
@@ -29,21 +40,4 @@ void pa(vector <int> &mass, vector <int> &mass2){
         mass[mass.size()]=a;
         itc_rshift_list(mass);
     }
-}
-void rra(vector <int> &mass){
-    if(mass.size()>0){
-        int a;
-        a=mass[mass.size()-1];
-        for(int i=mass.size()-1; i>0; i--){
-            mass[i]=mass[i-1];
-        }
-        mass[0]=a;
-    }}
-
-int list_max(vector <int> &mass){
-    int maximum = 0;
-    for(int i = 0; i < mass.size(); i++)
-        if (mass[i] > maximum)
-            maximum = mass[i] ;
-    return maximum;
 }
