@@ -1,6 +1,9 @@
 #include"sorti.h"
 #include"easy_list.h"
+#include <windows.h>
 int main(){
+    HANDLE  hConsole;
+    hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
     vector <int> mass;
     vector <int> mass2;
     string fun;
@@ -58,7 +61,13 @@ int main(){
     if (mass.size()<s){
         cout<<"KO";
     } else {
-    cout<<check(mass);
+        if (check(mass)=="OK"){
+            SetConsoleTextAttribute(hConsole, 10);
+        } else {
+            SetConsoleTextAttribute(hConsole, 12);
+        }
+        cout << check(mass) << endl;
+        SetConsoleTextAttribute(hConsole, 15);
     }
 return 0;
 }

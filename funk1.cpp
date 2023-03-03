@@ -37,7 +37,7 @@ void pa(vector <int> &mass, vector <int> &mass2){
         itc_lshift_list(mass2);
         mass2.pop_back();
 
-        mass[mass.size()]=a;
+        mass.push_back(a);
         itc_rshift_list(mass);
     }
 }

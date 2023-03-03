@@ -1,5 +1,6 @@
 #include "sorti.h"
 #include "easy_list.h"
+#include <windows.h>
 int mai()
 {
     vector <int> mass;
