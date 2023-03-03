@@ -1,6 +1,6 @@
 #include "sorti.h"
 #include "easy_list.h"
-int main()
+int mai()
 {
     vector <int> mass;
     vector <int> mass2;
@@ -37,6 +37,9 @@ int main()
             cout << "rrb\n";
             rrb(mass, mass2);
         }
+    }
+    for (int d = 0; d <= mass2.size(); d++){
+        cout << mass2[d];
     }
     return 0;
 }

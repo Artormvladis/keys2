@@ -16,6 +16,8 @@ int main(){
             b = b * 10 + (a[x] - 48);
     }
     mass.push_back(b);
+    int s;
+    s=mass.size();
     cin>>fun;
     while(fun!="*"){
         if(fun=="sa"){
@@ -53,6 +55,10 @@ int main(){
         }
         cin>>fun;
     }
+    if (mass.size()<s){
+        cout<<"KO";
+    } else {
     cout<<check(mass);
+    }
 return 0;
 }
